@@ -5,7 +5,7 @@ Watch out!!!
 Discord bot programmed in python  
 
 # Features 
-Has a 1/100 Chance to Trigger a jumpscare (embed)
+Has a 1/100 Chance to Trigger a jumpscare (embed)  
 Type ($jumpscare) to force the jumpscare (embed)
 > Features to come soon
 
