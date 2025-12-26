@@ -3,6 +3,8 @@ import logging
 import os 
 from main import Jumpscare
 from dotenv import load_dotenv
+from keep_alive import keep_alive
+keep_alive()
 load_dotenv()
 
 class Jumpscare_client(discord.Client):
