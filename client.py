@@ -27,7 +27,14 @@ class Jumpscare_client(discord.Client):
 intents = discord.Intents.default()
 intents.message_content = True
 
-client = Jumpscare_client (intents=intents)
+client = Jumpscare_client(intents=intents)
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
-client.run(os.getenv('TOKEN'), log_handler=handler)
+
+token = os.getenv('TOKEN')
+if not token:
+    print("Error: TOKEN environment variable is not set.")
+    print("Please add your Discord bot token as a secret named 'TOKEN'.")
+    exit(1)
+
+client.run(token, log_handler=handler)
 
